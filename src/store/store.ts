@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./userSlice";
-import notesReducer from "./notesSlice";
+import usersReducer from "./usersSlice";
+import userDataReducer from "./userDataSlice";
 
 const store = configureStore({
   reducer: {
-    user: userReducer,  //для данных юзера
-    notes: notesReducer,  //для заметок 
+    users: usersReducer,  //редуктор для сортировки списка юзеров
+    user: userDataReducer,  //редуктор для изменения данных конкретного юзера
   },
 });
 

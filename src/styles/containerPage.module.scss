@@ -1,20 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-  min-height: 650px;
-  color: #e0e0e0;
-  background: 
- //фон с верхней рамкой не повторяется
-  url('../assets/backgroundNoteStart.png') no-repeat top center, 
-  //остальной фон повторяется по вертикали
-  url('../assets/backgroundNote.png') repeat-y;
-  background-size: 
-    auto, 
-    auto;
-  margin: 50px auto 0;
-  padding: 100px 10px 40px;
+  max-width: 665px;
+  margin: 20px auto;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.212);
+  background: var(--white-color);
 }
 
 //для входной анимации:

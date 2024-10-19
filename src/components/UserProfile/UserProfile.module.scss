@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    max-height: 1000px;
+
+    .leftContainer {
+        width: 152px;
+        background: rgba(189, 189, 189, 1);
+    }
+
+    .rightContainer {
+        width: 513px;
+        margin: 19px 41px 25px 34px;
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        .preloader {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .userDataContainer {
+            border: 1px solid #F3F3F3;
+            border-radius: 8px;
+            padding: 20px 12px 10px;
+
+            .inputDataBlock {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+
+                label {
+                    font-size: 9px;
+                    line-height: 11px;
+                    margin-bottom: 4px;
+                }
+                
+                input {
+                    width: 210px;
+                }
+                textarea {
+                    width: 420px;
+                    height: 55px;
+                    resize: vertical;
+                }
+                input, textarea {
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    border: 1px solid lightgray; 
+                    
+                    &:focus {
+                    outline: none; 
+                    border-color: var(--blue-color); 
+                    border-width: 1.1px; 
+                    }
+                    &:disabled {
+                        color: rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+                .errorInput {
+                    border: 1.1px solid red; 
+                }
+                .errorText {
+                    color: red; 
+                    font-size: 9px;
+                    line-height: 11px;
+                    margin-top: 4px; 
+                }
+            }
+        }
+
+        .btnGroup {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .backToListBtn {
+                padding: 5px 15px;
+                border: 1px solid transparent;
+                border-radius: 5px; 
+                color: var(--blue-color);
+                transition:  color 0.1s, transform 0.1s;
+                
+                &:hover {
+                  color: rgb(48, 52, 175);
+                  border: 1px solid #A3A3A3; 
+                  transform: scale(1.02); 
+                }
+            }
+
+            .editBtn {
+                padding: 5px 15px;
+                border: none;
+                border-radius: 5px;
+                color: var(--white-color);
+                background: var(--blue-color);
+                transition: background-color 0.1s, transform 0.1s;
+                &:hover {
+                    background-color: rgb(48, 52, 175);
+                    transform: scale(1.02);
+                }
+            }
+            .saveBtn {
+                background-color: green;
+                &:hover {
+                  background-color: darkgreen;
+                }
+            }
+        }
+    }
+}
+
+

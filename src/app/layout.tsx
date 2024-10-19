@@ -3,25 +3,20 @@ import localFont from "next/font/local";
 import "@/styles/globals.css";
 import { Providers } from "@/store/Providers"; //импортим клиентский Providers
 
-const manropeExtra = localFont({
-  src: "../fonts/Manrope-ExtraBold.ttf",
-  variable: "--font-manrope-extra",
+const robotoBold = localFont({
+  src: "../fonts/Roboto-Bold.ttf",
+  variable: "--font-roboto-bold",
   weight: "100 900",
 });
-const manropeBold = localFont({
-  src: "../fonts/Manrope-Bold.ttf",
-  variable: "--font-manrope-bold",
-  weight: "100 900",
-});
-const manropeReg = localFont({
-  src: "../fonts/Manrope-Regular.ttf",
-  variable: "--font-manrope-reg",
+const robotoReg = localFont({
+  src: "../fonts/Roboto-Regular.ttf",
+  variable: "--font-roboto-reg",
   weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: "Блокнот",
-  description: "Индивидуальные для каждой страницы SEO-заманухи, например: Удобный блокнот, позволяющий добавлять, редактировать и удалять свои заметки",
+  title: "Наши пользователи",
+  description: "Индивидуальные для каждой страницы SEO-ключевые слова",
 };
 
 export default function RootLayout({
@@ -31,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manropeExtra.variable} ${manropeBold.variable} ${manropeReg.variable}`}>
+      <body className={`${robotoBold.variable} ${robotoReg.variable}`}>
         <Providers>
             {children}
         </Providers>

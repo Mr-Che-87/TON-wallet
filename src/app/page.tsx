@@ -1,11 +1,9 @@
-import HomeSwitch from "@/components/HomeSwitch/HomeSwitch";
-//import Register from "@/components/Register/Register";
+import UserListPage from "./user-list/page";
 
 export default function Home() {
   return (
     <>
-      <HomeSwitch /> 
-      {/* <Register />  */}
+       <UserListPage />  
     </>
   )
 }
