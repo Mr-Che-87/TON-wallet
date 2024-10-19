@@ -13,7 +13,7 @@ import declensionText  from "@/utils/declensionText";  //функция скло
 
 export default function UserList() {
   const dispatch: AppDispatch = useDispatch();
-  const { users, filteredUsers, searchTerm } = useSelector((state: RootState) => state.users); //данные из store
+  const { filteredUsers, searchTerm } = useSelector((state: RootState) => state.users); //данные из store
   const [loading, setLoading] = useState(true); //прелоадер
 
   //Подгружаем список юзеров из store(API подключается внутри слайса):
