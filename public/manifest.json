@@ -1,0 +1,17 @@
+{
+  "name": "TON-приложение",
+  "description": "Приложение для привязки и работы с TON кошельком",
+  "version": "1.0.0",                   
+  "manifest_version": 2,                
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "permissions": [
+      "storage"                       
+  ],
+  "url": "http://localhost:3000"       
+}

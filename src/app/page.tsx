@@ -1,9 +1,10 @@
-import UserListPage from "./user-list/page";
+import WalletConnectPage from "./wallet-connect/page";
 
 export default function Home() {
   return (
     <>
-       <UserListPage />  
+       <WalletConnectPage />  
     </>
   )
 }
+

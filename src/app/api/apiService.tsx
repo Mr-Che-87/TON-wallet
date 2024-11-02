@@ -1,35 +1,14 @@
-import axios from 'axios';
-import { IUser } from "@/types/IUser"; 
+// методы API тут - https://docs.tonconsole.com/tonapi/rest-api/accounts - вроде как самый верхний - getAccounts:
 
-//GET-ручка для всех юзеров:
-export const fetchGetUsers = async (): Promise<IUser[]> => {
-  try {
-    const response = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users'); 
-    return response.data; 
-  } catch (error) {
-    console.error(error);
-    return [];   
-  }
-};
 
-//GET-ручка для данных юзера по id:
-export const fetchGetUserById = async (id: string): Promise<IUser | null> => {
+export const fetchBalance = async (accountId: string): Promise<number> => {
     try {
-      const response = await axios.get<IUser>(`https://jsonplaceholder.typicode.com/users/${id}`);
-      return response.data;
+        const response = await fetch(`https://tonapi.io/v2/accounts/${accountId}`);
+        const data = await response.json();
+        console.log("Полученные данные:", data); // Лог данных из API
+        return data.balance || 0; 
     } catch (error) {
-      console.error(error);
-      return null; 
+        console.error("Ошибка при получении баланса:", error);
+        return 0; //возвращаем 0 в случае ошибки
     }
-  };
-
-//PATCH-ручка для изменения данных юзера по id (фейковая):
-export const patchUpdateUser = async (id: string, userData: Partial<IUser>): Promise<IUser | null> => {
-  try {
-    const response = await axios.patch<IUser>(`https://jsonplaceholder.typicode.com/users/${id}`, userData);
-    return response.data;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
 };
