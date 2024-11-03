@@ -39,6 +39,7 @@ export default function Transaction() {
       alert(`Перевод ${amount} TON на адрес ${recipient} выполнен успешно.`);
       router.push('/');
     } catch (error) {
+      console.error('Ошибка при выполнении транзакции:', error);
       alert('Ошибка при выполнении транзакции.');
     }
   };
