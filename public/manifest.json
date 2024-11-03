@@ -1,19 +1,7 @@
 {
   "url": "https://ton-wallet-five.vercel.app",
   "name": "TON-приложение",
-  "iconUrl": "https://ton-wallet-five.vercel.app/icon.png",
-  "description": "Приложение для привязки и работы с TON кошельком",
-  "version": "1.0.0",                   
-  "manifest_version": 2,                
-  "icons": [
-    {
-      "src": "/icon.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "permissions": [
-      "storage"                       
-  ]
+  "iconUrl": "https://ton-wallet-five.vercel.app/icon.png"
+  
      
 }
