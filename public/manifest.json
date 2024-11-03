@@ -13,5 +13,5 @@
   "permissions": [
       "storage"                       
   ],
-  "url": "http://localhost:3000"       
+  "url": "https://ton-wallet-five.vercel.app/wallet-connect"       
 }
