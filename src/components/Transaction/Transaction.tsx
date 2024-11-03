@@ -1,4 +1,4 @@
-/*
+
 "use client";
 
 import styles from "./Transaction.module.scss";
@@ -72,4 +72,3 @@ export default function Transaction() {
     </div>
   );
 }
-*/
