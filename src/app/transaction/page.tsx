@@ -1,4 +1,4 @@
-
+/*
 import styles from "@/styles/containerPage.module.scss";
 import type { Metadata } from "next";
 
@@ -19,5 +19,5 @@ export default function TransactionPage() {
     </div>
   )
 }
-
+*/
 
